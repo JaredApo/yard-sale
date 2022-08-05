@@ -26,6 +26,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    justify-items: center;
 }
 
 .logo {
@@ -40,7 +41,8 @@ body {
     margin-bottom: 12px;
     text-align: center;
 }
-.sub-title{
+
+.sub-title {
     color: var(--very-light-pink);
     font-size: var(--md);
     font-weight: 300;
@@ -48,12 +50,14 @@ body {
     margin-bottom: 32px;
     text-align: center;
 }
-.label{
+
+.label {
     font-size: var(--sm);
     font-weight: bold;
     margin-bottom: 4px;
 }
-.input{
+
+.input {
     background-color: var(--text-input-field);
     border: none;
     border-radius: 8px;
@@ -62,11 +66,13 @@ body {
     padding: 6px;
     margin-bottom: 12px;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
 }
-.primary-button{
+
+.primary-button {
     background-color: var(--hospital-green);
     border-radius: 8px;
     border: none;
@@ -77,12 +83,42 @@ body {
     font-weight: bold;
     height: 50px;
 }
-.login-button{
+
+.login-button {
     margin-top: 14px;
     margin-bottom: 30px;
 }
-@media(max-width: 640px){
-    .logo{
+
+@media(max-width: 640px) {
+    .logo {
         display: block;
     }
+}
+
+.email-image {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.email-image img {
+    width: 80px;
+}
+
+.resend {
+    font-size: var(--sm);
+}
+
+.resend span {
+    color: var(--very-light-pink);
+}
+
+.resend a {
+color: var(--hospital-green);
+text-decoration: none;
 }
